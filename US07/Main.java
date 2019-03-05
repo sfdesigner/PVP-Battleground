@@ -15,5 +15,8 @@ public class Main {
         playerD.showStats();
 
         // PlayerCharacter playerX = new PlayerCharacter();
+
+        System.out.println(PlayerCharacter.numCharacters());
+
     }
 }

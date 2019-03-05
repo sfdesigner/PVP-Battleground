@@ -9,9 +9,13 @@ public abstract class PlayerCharacter {
     protected int hp, maxhp;
     protected int mp, maxmp;
 
+    private static int count;
+
     public PlayerCharacter() {
 
         System.out.println("A new PlayerCharacter!");
+        count++;
+
     }
 
     protected void showStats() {
@@ -20,4 +24,7 @@ public abstract class PlayerCharacter {
         System.out.printf("STR: %3d\nINT: %3d\nAGI: %3d\n",strength,intelligence,agility);
     }
 
+    public static int numCharacters() {
+        return count;
+    }
 }
